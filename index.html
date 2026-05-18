@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Sérgio Samuel - Desenvolvedor Front-End">
+    <title>Meu Portfólio | Sérgio Samuel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="sub.js" defer></script>
+</head>
+<body>
+    
+    <header class="navigator"> <!--Header-->
+            <ul class="menu">
+                <li><a href="#inicio" class="link">Ínicio</a></li>
+                <li><a href="#sobre" class="link">Sobre</a></li>
+                <li><a href="#projetos" class="link">Projetos</a></li>
+                <li><a href="#contato" class="link">Contato</a></li>
+            </ul>
+    </header><!--Fim Header-->
+
+    <main id="inicio" class="inicio-cls"> <!--Inicio do site-->
+
+        <div class="card-perfil">
+            <img src="imagens/MSF_7459.jpg" alt="Foto de perfil de Sérgio Samuel" width="300px" height="auto" class="img-perfil">
+            <h1>Sérgio Samuel</h1>
+            <h2>Desenvolvedor Front-End</h2>
+        </div>
+
+    </main> <!--Fim inicio-->
+
+    <section id="sobre" class="sobre"> <!--Sobre-->
+
+        <h2 class="title">Sobre Mim</h2>
+
+        <div class="caixa-sobre">
+            <p class="sobre-p">
+                Olá, sou um desenvolvedor front-end iniciante em início de jornada, apaixonado por aprender e explorar novas possibilidades. Apesar de estar começando, tenho grande disposição para enfrentar desafios e transformar cada experiência em uma oportunidade de crescimento. Busco constantemente aprimorar minhas habilidades, absorver novos conhecimentos e aplicar o que aprendo em projetos práticos.
+            </p>
+
+        </div>
+    </section> <!--Fim sobre-->
+
+    <section id="projetos" class="projetos"> <!--Projetos-->
+
+        <h2 class="projetos-title">Meus Projetos</h2>
+
+        <div class="projetos-container">
+
+            <div class="projeto-card">
+                <img src="imagens/cafe-red.png" alt="Projeto 1" class="projeto-img">
+                <h3>Projeto 1</h3>
+                <p>Descrição do seu primeiro projeto aqui. Explique o que foi feito e as tecnologias utilizadas.</p>
+                <a href="#" class="btn-projeto">Ver Projeto</a>
+            </div>
+
+            <div class="projeto-card">
+                <img src="imagens/cafe-green.png" alt="Projeto 2" class="projeto-img">
+                <h3>Projeto 2</h3>
+                <p>Descrição do seu segundo projeto aqui. Explique o que foi feito e as tecnologias utilizadas.</p>
+                <a href="#" class="btn-projeto">Ver Projeto</a>
+            </div>
+
+            <div class="projeto-card">
+                <img src="imagens/landing-cafe.png" alt="Projeto 3" class="projeto-img">
+                <h3>Projeto 3</h3>
+                <p>Descrição do seu terceiro projeto aqui. Explique o que foi feito e as tecnologias utilizadas.</p>
+                <a href="#" class="btn-projeto">Ver Projeto</a>
+            </div>
+        </div>
+
+    </section> <!--Fim projetos-->
+
+    <section class="contato" id="contato"> <!--Contato-->
+
+        <h2 class="contato-title">Entre em contato</h2>
+
+        <form class="contato-box" onsubmit="enviarMsg(event)">
+            <div class="form">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" placeholder="Seu nome" class="camp-form" required>
+            </div>
+
+            <div class="form">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Digite a sua mensagem aqui." class="camp-form" rows="4" required></textarea>
+            </div>
+
+            <button class="btn-form" type="submit">Enviar Whatsapp</button>
+        </form>
+    </section> <!--Fim contato-->
+
+    <footer class="footer">
+        <p>&copy; 2025 Sérgio Samuel. Todos os direitos reservados.</p>
+        <p>Desenvolvido com <span class="heart">❤</span> e muito café</p>
+    </footer>
+</body>
+</html>
