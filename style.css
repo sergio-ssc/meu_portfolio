@@ -85,13 +85,14 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    margin-top: 50px;
     text-align: center;
 }
 
 .card-perfil h1 {
     font-size: 2.5rem;
     color: #02ffb7;
-    animation: glow 2s ease-in-out infinite;
+    /*animation: glow 2s ease-in-out infinite;*/
 }
 
 .card-perfil h2 {
@@ -124,6 +125,7 @@ body {
 
 .title {
     font-size: 2rem;
+    text-align: center;
     color: var(--claro);
     margin-bottom: 20px;
 }
@@ -313,7 +315,6 @@ body {
 
 .heart {
     color: #ff4757;
-    animation: heartbeat 1.2s infinite;
 }
 
 /* ANIMAÇÕES */
@@ -332,15 +333,6 @@ body {
     }
     50% {
         text-shadow: 0 0 20px rgba(2, 255, 183, 0.8);
-    }
-}
-
-@keyframes heartbeat {
-    0%, 100% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
     }
 }
 
@@ -412,4 +404,15 @@ body {
     .contato-box {
         padding: 1rem;
     }
+}
+
+.particulas {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: radial-gradient(circle, rgba(85, 11, 182, 0.829) 0%, rgba(16, 169, 229, 0.412) 70%);
+    position: fixed;
 }
