@@ -71,9 +71,12 @@ body {
 .inicio-cls {
     min-height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding-top: 60px;
+    gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .card-perfil {
@@ -109,14 +112,14 @@ body {
 }
 
 /* SEÇÃO SOBRE */
-.sobre {
-    min-height: 100vh;
+.sobre-lado {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .title {
@@ -133,11 +136,6 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 7px var(--claro);
     transition: transform 0.3s ease;
-}
-
-.caixa-sobre:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 15px rgba(78, 70, 229, 0.5);
 }
 
 .sobre-p {
@@ -348,6 +346,18 @@ body {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+    .inicio-cls {
+        flex-direction: column;
+        padding-top: 80px;
+        min-height: auto;
+    }
+
+    .sobre-lado {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+    }
+
     .navigator .menu {
         gap: 1rem;
     }
